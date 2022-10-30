@@ -12,7 +12,7 @@ const Login = ({auth, setAuth}) => {
   let navigate = useNavigate()
   const authHandler = () => {
     setAuth(true)
-    if(login.email === "noahadams@gamail.com" && login.password === "noah123") {
+    if(login.email === "noahadams@gmail.com" && login.password === "noah123") {
       navigate('/')
     }
     console.log(auth);
