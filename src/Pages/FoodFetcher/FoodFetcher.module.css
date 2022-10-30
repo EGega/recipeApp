@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-color: #78736ee0;
+  color: #fff;
+}
+.wrapper h2 {
+  padding-top: 30px;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.wrapper form {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+}
+.text {
+  width: 40%;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  font-size: 1.2rem;
+}
+.btn {
+  width: 25%;
+  height: 35px;
+  padding: 0 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.meal {
+  width: 30%;
+  font-size: 1.2rem;
+  height: 35px;
+ padding: 0 5px;
+}
+
+.cards {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+background-color: #A3B535;
+padding: 0 20px 10px 20px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.btnCard {
+  background-color: #78736ee0;
+  font-size: 1.1rem;
+  padding: 10px 5px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+
+}

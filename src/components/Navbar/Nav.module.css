@@ -1,0 +1,21 @@
+.container {
+  background-color: #A3B535;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+ 
+.navlink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.rightDiv {
+ display: flex;
+ gap: 30px;
+}
+.navlink:hover {
+  color: #ffffffd7;
+}

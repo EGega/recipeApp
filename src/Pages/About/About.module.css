@@ -1,0 +1,42 @@
+.container {
+  background-color: #78736ee0;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color:  #A3B535;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 70vh;
+  width: 95%;
+}
+.leftDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #78736ee0;
+  padding: 30px;
+  width: 90%;
+  color: #fff;
+}
+.info {
+width: 50%;
+}
+.info p {
+  font-size: 1.3rem;
+}
+.wrapper button {
+  width: 20%;
+  font-size: 1.3rem;
+  color: #fff;
+  background-color: #78736ee0;
+  border: none;
+  padding: 10px 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
