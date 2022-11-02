@@ -29,7 +29,6 @@ const RecipeDisplayer = () => {
       </div>
       <div className={recipeStyle.img}>
       <img src={res.recipe.image} alt="" />
-      <button onClick={() => navigate(-1)}>Go Back</button>
       </div>
       
       <div className={recipeStyle.ingredients}>
@@ -41,6 +40,7 @@ const RecipeDisplayer = () => {
   })}
        </div>
       </div>
+      <button onClick={() => navigate(-1)}>Go Back</button>
     </div>
     </div>
     </>

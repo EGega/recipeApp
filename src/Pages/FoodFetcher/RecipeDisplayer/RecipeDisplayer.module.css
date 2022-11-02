@@ -24,7 +24,7 @@
   
 }
 .wrapper .ingredients {
-  width: 40%;
+  width: 30%;
   background-color: #78736ee0;
   border-radius: 10px;
   color: #fff;
@@ -40,11 +40,7 @@
 }
 
 .wrapper .img{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
+  width:  25%;
 }
 .wrapper img {
   width: 100%;
@@ -52,15 +48,17 @@
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-.wrapper .img button{
-  width: 50%;
+.wrapper button{
+  width: 200px;
   font-size: 1.3rem;
+  bottom: 20px;
   color: #fff;
-  background-color: #78736ee0;
+  background-color: #A3B535;
   border: none;
   padding: 10px 0;
   border-radius: 30px;
   cursor: pointer;
+  position: absolute;
 }
 
 .container h2 {
@@ -68,4 +66,36 @@
 }
 .ingredientList {
   font-size: 1.3rem;
+}
+
+@media (max-width: 580px ) {
+  .wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 90%;
+    background-color:  #78736ee0;
+    overflow: none;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .wrapper .img{
+    width: 90%;
+  }
+  .wrapper .leftDiv {
+    width: 90%;
+    background-color: #78736ee0; 
+  }
+  .wrapper .ingredients {
+    width: 90%;
+    background-color: #78736ee0;
+    flex-direction: column;
+    padding-bottom: 150px;
+  }
+  .wrapper button{
+    width: 200px;
+    bottom: -120px;
+    position: absolute;
+  }
+  
+  
 }

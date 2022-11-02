@@ -60,4 +60,15 @@
   transform: scale(0.98);
 }
 
+@media (max-width: 580px ) {
+  .form {
+    width: 50%;
+  }
+  .form h3, .form input {
+    font-size: 1.3rem;
+  }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
 

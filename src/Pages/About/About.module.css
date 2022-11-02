@@ -40,3 +40,25 @@ width: 50%;
   border-radius: 30px;
   cursor: pointer;
 }
+
+@media (max-width: 580px ) {
+  .leftDiv {
+    margin-top: 50px ;
+    flex-direction: column;
+    width: 90%;
+  
+  }
+  .info {
+    margin-top: 40px;
+    width: 90%;
+  }
+  .wrapper {
+    background-color:  #78736ee0;
+    flex-direction: column;
+    width: 100%;
+  }
+  .wrapper button {
+   background-color: #A3B535 ;
+  }
+}
+

@@ -66,3 +66,21 @@ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   border: none;
 
 }
+
+@media (max-width: 580px ) {
+  .wrapper h2 {
+    font-size: 1.5rem;
+  }
+  .wrapper form {
+    width: 95%;
+    box-sizing: border-box;
+    display: flex;
+  }
+  .meal {
+    width: 35%;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
