@@ -35,8 +35,8 @@ const RecipeDisplayer = () => {
         <h3>Ingredients
         </h3>
        <div className={recipeStyle.ingredientList}>
-        {res.recipe.ingredientLines.map((el) => {
-       return <p>{el}</p>
+        {res.recipe.ingredientLines.map((el, index) => {
+       return <p key={index}>{el}</p>
   })}
        </div>
       </div>

@@ -16,10 +16,13 @@ const FoodFetcher = () => {
       const data = await res.json();
       setResult(data.hits);
   }
+  
+ if(result.length != 0) {
+  localStorage.setItem("result", JSON.stringify(result))
+ } 
 
-localStorage.setItem("result", JSON.stringify(result))
+
 const localResult = JSON.parse(localStorage.getItem("result"))
-
 
   return (
     <>
@@ -39,11 +42,11 @@ const localResult = JSON.parse(localStorage.getItem("result"))
         </select>
       </form>
       <div className={foodStyle.cards}>
-      {result && result?.map((res) => {
+      {result && localResult?.map((res, index) => {
         // const {calories, label, } = res
       
    return (
-   <div className={foodStyle.card}>
+   <div key={index} className={foodStyle.card}>
     <h3>{res.recipe.label}</h3>
     <img src={res.recipe.image} />
     <button className={foodStyle.btnCard} onClick={() => {
